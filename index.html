@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Doctor +</title>
+  </head>
+
+  <body class="bg-body text-textcolor">
+
+    <!-- Navbar Start -->
+    <div class="bg-bgsection">
+      <header class="bg-transparent top-0 left-0 w-full flex items-center z-50">
+        <div class="container mx-auto flex pt-4 items-center justify-between relative">
+          <img src="dist/img/logo.svg" alt="" class="w-24 xl:w-32"/>
+          <button id="hamburger" type="button" class="z-50 lg:hidden">
+            <img src="dist/img/Burger.svg" alt="" class="w-5" />
+          </button>
+          <nav class="hidden absolute bg-white border-2 border-black border-opacity-15 right-1 top-14 rounded-md py-3 w-fit px-5 xl:px-0 gap-8 lg:border-none lg:flex lg:bg-transparent lg:static lg:w-auto" id="nav-menu">
+            <div class="flex flex-col gap-3 lg:flex-row items-center lg:gap-8 xl:gap-48 2xl:gap-72">
+              <ul class="">
+                <li class="flex flex-col gap-3 lg:flex-row lg:gap-7 xl:gap-8">
+                  <a href="#" class="text-base font-medium text-textcolor text-opacity-75 hover:text-primary nav-class lg:opacity-70 lg:hover:opacity-100">Home</a>
+                  <a href="#" class="text-base font-medium text-textcolor text-opacity-75 hover:text-primary nav-class lg:opacity-70 lg:hover:opacity-100">About</a>
+                  <a href="#" class="text-base font-medium text-textcolor text-opacity-75 hover:text-primary nav-class lg:opacity-70 lg:hover:opacity-100">Services</a>
+                  <a href="#" class="text-base font-medium text-textcolor text-opacity-75 hover:text-primary nav-class lg:opacity-70 lg:hover:opacity-100">Contact</a>
+                </li>
+              </ul>
+              <a href="#" class="flex items-center gap-2 bg-primary text-sm font-semibold w-fit rounded-full">
+                <div class="flex items-center gap-1 justify-center px-4 py-2 xl:px-6 xl:py-3 xl:gap-2">
+                  <img src="dist/img/message.svg" alt="">
+                  <p class="text-white text-sm font-medium text-nowrap">Book Now</p>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="relative">
+      <div class="absolute w-full justify-center items-center flex flex-wrap gap-2 mt-72 md:mt-[22rem] md:px-8 xl:gap-4 xl:mt-[32rem] 2xl:mt-[36rem]">
+        <div class="flex items-center bg-primary w-[70%] gap-4 px-3 py-2 rounded-md md:w-[38%] xl:w-[22%] xl:px-4 xl:py-3 xl:rounded-xl">
+          <img src="dist/img/factvalue-icon1.svg" alt="clock" class="w-7 xl:w-9">
+          <div class="flex flex-col xl:gap-1">
+            <h1 class="text-white font-semibold text-sm xl:text-base">24 hour service</h1>
+            <p class="text-white font-normal text-xs xl:text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="flex items-center bg-primary w-[70%] gap-4 px-3 py-2 rounded-md md:w-[38%] xl:w-[22%] xl:px-4 xl:py-3 xl:rounded-xl">
+          <img src="dist/img/factvalue-icon2.svg" alt="clock" class="w-7 xl:w-9">
+          <div class="flex flex-col xl:gap-1">
+            <h1 class="text-white font-semibold text-sm xl:text-base">8 years of experience</h1>
+            <p class="text-white font-normal text-xs xl:text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="flex items-center bg-primary w-[70%] gap-4 px-3 py-2 rounded-md md:w-[38%] xl:w-[22%] xl:px-4 xl:py-3 xl:rounded-xl">
+          <img src="dist/img/factvalue-icon3.svg" alt="clock" class="w-7 xl:w-9">
+          <div class="flex flex-col xl:gap-1">
+            <h1 class="text-white font-semibold text-sm xl:text-base">High quality care</h1>
+            <p class="text-white font-normal text-xs xl:text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+          </div>
+        </div>
+       </div>
+    </div>
+    <div class="bg-bgsection">
+      <section class="container mx-auto bg-bgsection pt-16 pb-12 md:pb-20">
+        <div class="flex flex-col items-center gap-6 md:flex-row">
+          <div class="flex flex-col gap-3 xl:gap-5">
+            <div class="flex flex-col gap-2 xl:gap-4">
+              <div class="flex flex-col gap-1 xl:gap-4">
+                <p class="text-tertiary font-medium text-base xl:text-2xl">Dr. Matthew Anderson</p>
+                <h1 class="text-textcolor font-bold text-2xl xl:text-5xl xl:w-[500px] xl:leading-[4rem]">A dedicated doctor you can trust</h1>
+              </div>
+              <p class="text-textcolor text-opacity-65 font-normal text-xs xl:text-base 2xl:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut.</p>
+            </div>
+            <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center w-48 py-2 rounded-full xl:w-fit xl:px-7 xl:py-4">
+              <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+              <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+            </a>
+          </div>
+          <img src="dist/img/hero-img.svg" alt="hero-img" class="hidden w-[50%] md:inline-block xl:w-[45%]">
+        </div>
+      </section>
+    </div>
+
+    <!-- Hero End -->
+
+    <!-- About Start -->
+     <section class="container mx-auto pt-80 md:pt-60 xl:pt-64">
+      <div class="flex flex-col items-center md:flex-row md:gap-2 2xl:gap-8">
+        <img src="dist/img/about-img.svg" alt="about-img" class="w-auto md:w-[50%] 2xl:w-[60%]">
+        <div class="flex flex-col gap-3 xl:gap-5">
+          <div class="flex flex-col gap-2 xl:gap-4">
+            <div class="flex flex-col gap-1 xl:gap-4">
+              <p class="text-tertiary font-medium text-base xl:text-2xl">About me</p>
+              <h1 class="text-textcolor font-bold text-xl w-[300px] xl:text-4xl xl:w-[500px] xl:leading-[3rem]">A dedicated doctor with the core mission to help</h1>
+            </div>
+            <p class="text-textcolor text-opacity-65 font-normal text-xs xl:text-base 2xl:w-[90%]">orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.
+            </p>
+          </div>
+          <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center w-48 py-2 rounded-full xl:w-fit xl:px-7 xl:py-4">
+            <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+            <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+          </a>
+        </div>
+      </div>
+     </section>
+    <!-- About End -->
+
+    <!-- Service Start -->
+     <div class="bg-bgsection mt-16">
+      <div class="container mx-auto py-10 flex flex-col gap-12 md:gap-14 md:py-14 xl:gap-20 xl:py-20">
+        <div class="flex flex-col items-center md:flex-row md:justify-between">
+          <div class="flex flex-col gap-3 xl:gap-5">
+            <div class="flex flex-col gap-2 xl:gap-4">
+              <div class="flex flex-col gap-1 xl:gap-4">
+                <p class="text-tertiary font-medium text-base xl:text-2xl">Services</p>
+                <h1 class="text-textcolor font-bold text-xl w-[200px] xl:text-4xl xl:w-[500px] xl:leading-[3rem]">Experienced in multiple medical practices</h1>
+              </div>
+              <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.
+              </p>
+            </div>
+            <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center w-48 py-2 rounded-full xl:w-fit xl:px-7 xl:py-4">
+              <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+              <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+            </a>
+          </div>
+          <img src="dist/img/Service-img.svg" alt="Service-img" class="hidden w-[40%] md:inline-block">
+        </div>
+
+        <div class="flex flex-wrap gap-6 md:gap-0 md:justify-between">
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/General-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">General</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/Pediatrics-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">Pediatrics</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/Nutritional-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">Nutritional</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/Cardiology-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">Cardiology</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/Ophthalmology-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">Ophthalmology</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-bgbox rounded-lg md:w-[32%] md:mt-4 xl:rounded-2xl xl:mt-8">
+            <div class="flex flex-col p-8 gap-5 md:p-4 xl:p-7">
+              <img src="dist/img/Orthopedics-service.svg" alt="General-service" class="w-[90%] mx-auto">
+              <div class="flex flex-col items-start gap-1 xl:gap-3">
+                <h1 class="font-semibold text-base text-textcolor xl:text-xl 2xl:text-2xl">Orthopedics</h1>
+                <p class="text-textcolor text-opacity-65 font-normal text-xs xl:w-[80%] xl:text-base 2xl:w-[90%]">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc
+                </p>
+              </div>
+              <a href="#" class="bg-gradient-to-br from-primary to-secondary flex items-center gap-2 justify-center py-2 rounded-full w-full xl:px-7 xl:py-4">
+                <img src="dist/img/message.svg" alt="" class="w-5 xl:w-7">
+                <p class="text-white text-xs font-semibold xl:text-base">Book an appointment</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- Service End -->
+
+    <!-- Cta Start -->
+    <div class="container mx-auto mt-32 flex flex-col gap-3 xl:gap-5 2xl:gap-7 xl:mt-40">
+      <p class="text-tertiary font-medium text-sm text-center xl:text-xl 2xl:text-2xl">Book an appointment</p>
+      <div class="bg-primary rounded-lg md:rounded-xl xl:rounded-2xl">
+        <div class="flex flex-col px-4 py-6 items-center gap-4 xl:px-6 xl:py-10 xl:gap-6 2xl:py-14 2xl:px-10 2xl:gap-8">
+          <div class="flex flex-col gap-2 items-center xl:gap-4 2xl:gap-6">
+            <h1 class="text-white font-bold text-sm text-center md:mx-auto xl:text-3xl xl:w-[800px] xl:leading-[3rem]">Schedule a virtual or presential appointment today</h1>
+            <p class="text-white text-opacity-65 font-normal text-xs text-center md:w-[80%] xl:text-base xl:w-[60%] 2xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant eu sociis fermentum felis.
+          </div>
+          <a href="#" class="bg-bgbox flex items-center gap-2 justify-center py-2 rounded-full w-fit px-4 xl:px-7 xl:py-4">
+            <img src="dist/img/whatsapp.svg" alt="" class="w-5 xl:w-7">
+            <p class="text-primary text-xs font-semibold xl:text-base">Book an appointment</p>
+          </a>
+        </div>
+        </p>
+      </div>
+    </div>
+    <!-- Cta End -->
+
+    <!-- Why Choose Us Start -->
+     <section class="container mx-auto mt-36 md:mt-40 xl:mt-52">
+      <div class="flex flex-col gap-4 justify-center xl:gap-6 2xl:gap-8">
+        <div class="flex flex-col gap-3 md:gap-5 xl:gap-7 2xl:gap-9">
+          <div class="flex flex-col gap-4 md:gap-5 xl:gap-7 2xl:gap-8">
+            <p class="text-tertiary font-medium text-sm text-center xl:text-2xl">Why Dr. Matthew Anderson?</p>
+            <div class="relative cursor-pointer justify-center">
+              <img src="dist/img/Video-Why.svg" alt="video" class="w-full">
+              <img src="dist/img/pause.svg" alt="pause" class="absolute w-8 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:w-12 xl:w-20">
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-1 md:gap-2 xl:gap-3 2xl:gap-4">
+            <h1 class="text-textcolor font-bold text-xl w-full text-center xl:text-4xl xl:w-full xl:leading-[3rem]">A dedicated doctor with the core mission to help</h1>
+            <p class="text-textcolor text-opacity-65 font-normal text-xs text-center md:w-[70%] xl:w-[80%] xl:text-base 2xl:w-[85%]">orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.
+            </p>
+          </div>
+        </div>
+        <div class="justify-center items-center flex flex-wrap gap-2 md:gap-3 xl:gap-4">
+          <div class="flex items-center justify-center bg-primary w-fit gap-3 px-5 py-3 rounded-md xl:px-8 xl:py-4 xl:rounded-xl 2xl:px-10 2xl:py-5">
+            <img src="dist/img/factvalue-icon1.svg" alt="clock" class="w-7 xl:w-9">
+            <h1 class="text-white font-semibold text-sm xl:text-base">+15 years of experience</h1>
+          </div>
+          <div class="flex items-center justify-center bg-primary w-fit gap-3 px-5 py-3 rounded-md xl:px-8 xl:py-4 xl:rounded-xl 2xl:px-10 2xl:py-5">
+            <img src="dist/img/factvalue-icon2.svg" alt="clock" class="w-7 xl:w-9">
+            <h1 class="text-white font-semibold text-sm xl:text-base">Urgent 24 hour service</h1>
+          </div>
+          <div class="flex items-center justify-center bg-primary w-fit gap-3 px-5 py-3 rounded-md xl:px-8 xl:py-4 xl:rounded-xl 2xl:px-10 2xl:py-5">
+            <img src="dist/img/factvalue-icon3.svg" alt="clock" class="w-7 xl:w-9">
+            <h1 class="text-white font-semibold text-sm xl:text-base">High quality care</h1>
+          </div>
+         </div>
+      </div>
+     </section>
+    <!-- Why Choose Us Start -->
+
+    <!-- Testimoni Start -->
+     <div class="bg-bgsection mt-20 xl:mt-40">
+      <div class="container mx-auto h-full py-10 flex flex-col gap-8 md:py-14 xl:gap-10 xl:py-36">
+        <div class="flex flex-col items-center gap-1 md:gap-2 xl:gap-4 2xl:gap-5">
+          <h1 class="text-textcolor font-bold text-xl w-full text-center md:w-[80%] xl:text-4xl xl:w-[70%] xl:leading-[3rem]">What our great customers say about Dr. Matthew Anderson</h1>
+          <p class="text-textcolor text-opacity-65 font-normal text-xs text-center md:w-[70%] xl:w-[60%] xl:text-base 2xl:w-[50%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div>
+        <div class=" flex items-center justify-center">
+          <div class="swiper-button-prev-custom">
+            <img src="dist/img/arrow-left.svg" alt="" class="w-32 xl:w-14"/>
+          </div>
+          <div class="swiper mySwiper flex items-center justify-center">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-1.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Samy White</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Cardiology Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-2.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Arthur Northon</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Nutrion Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-3.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Kevin Smith</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Orthopedics Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-4.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Amanda Jackson</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Ophthalmology Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-4.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Amanda Jackson</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Ophthalmology Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-bgbox rounded-lg xl:rounded-2xl">
+                <div class="flex flex-col gap-3 px-5 py-3 xl:px-7 xl:py-5">
+                  <p class="text-textcolor font-normal text-xs md:w-[70%] xl:w-fit xl:text-base 2xl:w-[85%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <div class="flex items-center gap-2 xl:gap-4">
+                    <img src="dist/img/testimoni-4.svg" alt="testimoni-1" class="w-10 xl:w-12">
+                    <div class="flex flex-col">
+                      <h1 class="text-tertiary font-medium text-sm xl:text-lg">Amanda Jackson</h1>
+                      <p class="opacity-65 text-xs font-medium xl:text-sm">Ophthalmology Patient</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next-custom">
+            <img src="dist/img/arrow-right.svg" alt="" class="w-32 xl:w-14"/>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- Testimoni Start -->
+
+    <!-- Footer Start -->
+     <section class="bg-primary relative">
+      <div class="container mx-auto">
+        <div class="flex flex-col gap-4 py-6 xl:py-10 xl:gap-7 2xl:py-12">
+          <div class="flex flex-col gap-6 xl:flex-row xl:justify-between">
+            <div class="flex flex-col gap-2 md:gap-3 xl:gap-4">
+              <div class="flex flex-col gap-1 md:gap-2 xl:gap-4">
+                <img src="dist/img/logo-2.svg" alt="logo" class="w-24 xl:w-32">
+                <p class="text-white font-normal text-xs md:w-[50%] xl:w-[75%] xl:text-base 2xl:w-[80%]">8 W. South St.Buford, GA 30518 5Briarwood LaneVienna, VA 22180 RER</p>
+              </div>
+              <div class="flex gap-3 xl:gap-4 2xl:gap-6">
+                <a href="#">
+                  <img src="dist/img/youtube.svg" alt="youtube" class="w-7 xl:w-9">
+                </a>
+                <a href="#">
+                  <img src="dist/img/facebook.svg" alt="facebook" class="w-7 xl:w-9">
+                </a>
+                <a href="#">
+                  <img src="dist/img/whatsapp-2.svg" alt="whatsapp" class="w-7 xl:w-9">
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 md:flex-row md:justify-between xl:gap-20">
+              <div class="flex flex-col gap-2 xl:gap-5">
+                <h1 class="text-white font-semibold text-sm xl:text-xl xl:text-nowrap">Company Info</h1>
+                <div class="flex flex-col gap-2 xl:gap-4">
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">About</p>
+                  </a>
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">Services</p>
+                  </a>
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">Blog</p>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 xl:gap-5">
+                <h1 class="text-white font-semibold text-sm xl:text-xl">Book Now</h1>
+                <div class="">
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">Appointment</p>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 xl:gap-5">
+                <h1 class="text-white font-semibold text-sm xl:text-xl">Contact</h1>
+                <div class="flex flex-col gap-2 xl:gap-4">
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">+1 123456789</p>
+                  </a>
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">remmcal@mail.com</p>
+                  </a>
+                  <a href="#">
+                    <p class="text-white font-normal text-xs md:w-[70%] xl:w-fit xl:text-base">Phone: +1 12345678</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="h-[2px] bg-white rounded-full">
+          <p class="text-white font-normal text-xs md:text-center md:justify-center xl:w-full xl:text-base">© Doctor all rights 2023 - Designed by remmcal</p>
+        </div>
+      </div>
+     </section>
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+.container{
+    @apply w-[80%]
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-fixed{
+    @apply fixed z-[9999]
+}
+
+/* .swiper{
+  @apply h-full !important;
+} */
+
+.swiper-scrollbar{
+  background-color:#1F1F1F !important; 
+
+}
+
+
+
+.swiper-slide{
+  @apply h-40 2xl:h-44 !important;
+}
+
+
+.swiper-scrollbar-lock{
+  @apply block !important; 
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag{
+background-color:#C7FF26;
+}
+
+.swiper-scrollbar{
+  @apply w-[40%] bottom-0 left-1/2 -translate-x-1/2 !important;
+}
+
+.swiper-scrollbar1{
+  @apply w-full pb-28 !important;
+}
